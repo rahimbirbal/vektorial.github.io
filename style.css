@@ -1,0 +1,274 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* AREA INTI */
+
+.navbar{
+    top: 0;
+    background-color: #0C3D3A;
+    position: fixed;
+    width: 100%;
+    
+    
+}
+
+.navbar .childNavbar{
+    background-color: #0C3D3A;
+    margin: auto;
+    width: 1190px ;
+    height: 66px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 88px;
+    padding-right: 88px;
+}
+
+.navbar span img{
+    margin-top: 10px;
+}
+
+.navbar ul{
+    position: relative;
+    float: right;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin-left: 54px;
+}
+
+.navbar li{
+    display: inline-block;
+    line-height: 66px;
+
+}
+
+
+.section .logo2 {
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-top: 138px;
+    margin-bottom: 84px;
+}
+
+.semak img{
+    width: 100%;
+}
+
+.main{
+    width: auto;
+    background-color: #0A332F;
+    margin-top: -10px;
+}
+
+.main .belukar{
+    padding: 80px;
+    text-align: center;
+}
+
+.main ul{
+    text-align: center;
+}
+
+.main li {
+    display: inline-block;
+    margin: 100px;
+    margin-bottom: 88px;
+}
+
+.main p{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.main p img{
+    line-height: 30px;
+}
+
+.main .alamat{
+    margin-top: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.gathering{
+    margin-top: 200px;
+}
+
+
+.container{
+    text-align: center;
+}
+
+.container .tombol{
+    width: 300px;
+    height: 100px;
+    background-color: #0A332F;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.container .tombol span{
+    transform: scale(0);
+    transition-duration: 0.3s;
+    border-radius: 50%;
+}
+
+.container a:hover span{
+    border-radius: 0;
+    display: block;
+    width: 300px;
+    height: 100px;
+    transform: scale(1);
+    background-color: #198075;
+}
+
+
+.semakSemak{
+    display: inline-block;
+    width: 100%;
+    height: 310px;
+}
+.semakSemak .kanan{
+    float: right;
+    margin-top: 75px;
+}
+
+footer{
+    margin-top: -5px;
+    height: 220px;
+    background-color: #0A332F;
+}
+
+footer p{
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 220px;
+}
+
+
+
+@media screen and (max-width : 500px){
+
+    .section .logo2 img{
+        margin-top: 100px;
+        width: 300px;
+    }
+
+
+    .navbar .childNavbar{
+        padding-right: 0;
+        padding-left: 0;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+        width: 320px;
+        position: relative;
+    }
+
+    .navbar .childNavbar ul{
+        display: none;
+    }
+
+    .navbar{
+        width: 100%;
+        z-index: 999;
+    }
+
+    .navbar .childNavbar{
+        width: 320px;
+        margin: auto;
+    }
+
+    .semak {
+        margin: auto;
+        position: relative;
+    }
+
+
+    .main .alamat{
+        font-size: 14px;
+    }
+
+    .main .belukar img{
+        width: 250px;
+    }
+
+    .semakSemak .kanan{
+        display: none;
+    }
+
+    .navbar .childNavbar img{
+        width: 150px;
+    }
+
+
+
+}
+
+
+
+/* clear : both sebelum ul */
